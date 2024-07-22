@@ -1,0 +1,153 @@
+:root {
+  --main-yellow: hsl(47, 88%, 63%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(0, 0%, 50%);
+  --neutral-black: hsl(0, 0%, 7%);
+
+  --ff-primary: "Figtree", sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-semi-bold: 500;
+  --fw-bold: 800;
+
+  --fs-300: 0.8125rem;
+  --fs-400: 0.875rem;
+  --fs-500: 0.9375rem;
+  --fs-600: 1rem;
+  --fs-700: 1.2rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--main-yellow);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border: 0.5px solid black;
+  border-radius: 15px;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  padding: 20px;
+  text-align: left;
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.learning-button {
+  background-color: var(--main-yellow);
+  border-radius: 5px;
+  border-color: transparent;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-300);
+  width: 75px;
+  height: 25px;
+  margin-top: 15px;
+}
+
+.publish {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-semi-bold);
+  margin-top: 10px;
+}
+
+.foundations {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-700);
+  font-weight: var(--fw-bold);
+  margin-top: 10px;
+}
+
+.languages {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  color: grey;
+  margin-top: 10px;
+}
+
+.greg-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.greg-image {
+  max-width: 30px;
+}
+
+.greg {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-bold);
+}
