@@ -6,7 +6,11 @@ This is a solution to the blog preview card challenge on Frontend Mentor. Fronte
 
 - [Overview](#overview)
 - [Challenge](#the-challenge)
+- [Screenshot](#screenshot)
 - [Links](#links)
+- [Built With](#built-with)
+- [What I learned](#what-i-learned)
+- [Author](#author)
 
 ## Overview
 
