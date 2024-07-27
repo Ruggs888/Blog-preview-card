@@ -105,13 +105,23 @@ svg {
 .learning-button {
   background-color: var(--main-yellow);
   border-radius: 5px;
-  border-color: transparent;
+  border: none;
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
   font-size: var(--fs-300);
   width: 75px;
   height: 25px;
   margin-top: 15px;
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.learning-button:hover {
+  color: var(--neutral-white);
 }
 
 .publish {
@@ -126,6 +136,13 @@ svg {
   font-size: var(--fs-700);
   font-weight: var(--fw-bold);
   margin-top: 10px;
+  color: inherit;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.foundations:hover {
+  color: var(--main-yellow);
 }
 
 .languages {
